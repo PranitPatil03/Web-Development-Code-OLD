@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class10</title>
+</head>
+<body>
+    <div class="contanier">
+        Current Time Is: <span id="time"></span>
+    </div>
+    <script>
+        console.log("hello");
+        //Prsent Time 
+        // let now =new Date();
+        // console.log(now);
+
+        //formatted date
+        // let newDate = new Date("2020 5 29");
+        // console.log(newDate);
+
+        //formatted date and time
+        let newDate = new Date(2020,5,29,5,23,45);
+        console.log(newDate);
+
+        let year=newDate.getFullYear();
+        console.log(year);
+        
+        let month=newDate.getMonth();
+        console.log(month);
+        
+        let day=newDate.getDate();
+        console.log(day);
+
+        let hour=newDate.getHours();
+        console.log(hour);
+
+        function timenow() {
+            time.innerHTML=new Date();
+        }
+        setInterval(timenow,1000);
+    </script>
+</body>
+</html>

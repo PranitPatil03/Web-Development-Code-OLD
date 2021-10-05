@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class6</title>
+</head>
+
+<body>
+    <div class="welcome">
+        <h2>Welcome to club...</h2>
+    </div>
+    <script>
+        let friends = ["pranit", "nikhil", "pratik", "jui", "jay"];
+        for(let i=0; i<friends.length; i++){
+            console.log(friends[i])
+        }
+
+        friends.forEach(function f(item){
+            console.log(item)
+        });
+
+        for(element of friends){
+            console.log(element)
+        }
+
+        
+        let employee =
+        {
+            name: "pranit",
+            id:2,
+            skill: "web del",
+        }
+        for (key in employee) {
+            console.log(`the ${key} of employee is ${employee[key]}`)
+        }
+    </script>
+</body>
+
+</html>

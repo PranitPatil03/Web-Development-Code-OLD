@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class7</title>
+</head>
+<body>
+    <div  id="main" class="welcome">
+        <h2>Welcome to club...</h2>
+        <ul id="nav">
+            <li>Home</li>
+            <li>about us</li>
+            <li>Services</li>
+            <li>contact us</li>
+            <li>feedback</li>
+        </ul>
+    </div>
+    <div class="welcome">
+        <h1>welcome</h1>
+    </div>
+    <script>
+        // let main=document.getElementById('main');
+        // console.log(main);
+
+        // let main=document.getElementById('nav');
+        // console.log(main);
+
+        // let main=document.getElementsByClassName('welcome');
+        // console.log(main);
+
+        let main=document.querySelectorAll('#nav>li');
+        console.log("return",main);
+
+        // let main=document.querySelector('#nav');
+        // console.log(main);
+    </script>
+</body>
+</html>

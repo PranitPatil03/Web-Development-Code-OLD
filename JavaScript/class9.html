@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class9</title>
+</head>
+
+<body>
+    <div class="contanier">
+        <h2>hello</h2>
+        Time now is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("fuck off!");
+        function greet(name, text) {
+            console.log("hello " + name + " " + text);
+        }
+        setTimeout(greet, 3000, "pranit", "take care")//for printing onces.
+
+        setInterval(greet,5000,"pranit", "take care");//for printing in every interval.
+
+        function displayTime() {
+            time = new Date;
+            console.log(time);
+            document.getElementById("time").innerHTML = time
+        }
+        setInterval(displayTime,2000);
+         
+    </script>
+</body>
+
+</html>

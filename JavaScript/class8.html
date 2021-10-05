@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class8</title>
+    <style>
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 30px; */
+        }
+        #btn {
+            background-color: black;
+            color: white;
+            padding: 10px 10px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="box">
+            <p id="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est natus illum dolorum, officia veniam aliquam
+                adipisci, id esse ut quia, praesentium distinctio quaerat numquam eligendi velit pariatur omnis a totam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempora aspernatur vero nesciunt. Ipsum
+                autem, blanditiis neque in sapiente dolores! Nisi voluptate quod perferendis laboriosam facilis impedit
+                officiis mollitia rem officia dignissimos. Provident dicta illum cumque expedita molestias ullam minima
+                repudiandae accusamus corporis, non nisi numquam. Possimus, ut distinctio saepe fugiat reiciendis
+                corporis, maiores harum sint explicabo voluptate omnis expedita vel minima eum ea facilis. Voluptatum
+                esse voluptatem amet beatae facere repellat consectetur, accusantium ab eius perspiciatis mollitia
+                quibusdam totam incidunt dolores, non asperiores. Illo quos incidunt aut, aperiam eum ex, quidem
+                necessitatibus soluta culpa, recusandae ad earum libero iure optio voluptatum? Molestiae, quo
+                laudantium, tempore nemo laborum provident perspiciatis officiis porro repudiandae similique, quis
+                vitae? Dolorum dignissimos eaque commodi vitae animi quod culpa consectetur officiis, suscipit totam
+                esse. Tempore in explicabo officia, tenetur veritatis corporis odio sunt nisi, porro architecto vel
+                reiciendis amet quibusdam maxime ratione voluptatem. Quae tenetur in nulla ipsum cumque reprehenderit
+                quod quisquam. Quo unde saepe nihil iusto itaque at? Repudiandae, repellendus ipsa quas ad maiores
+                dolores. Odio laudantium consequatur temporibus ut accusantium ducimus eaque saepe et ab cumque,
+                repellendus facere quas officiis eius possimus numquam atque enim explicabo voluptates minima excepturi
+                eos distinctio assumenda culpa.
+            </p>
+            <div class="button">
+                <button id="btn" onclick="hide()">Show/Hide</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function hide(){
+            let but=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display!="none")
+           {
+               para.style.display="none";
+           }else
+           {
+            para.style.display="block";
+           }
+        }
+    </script>
+</body>
+
+</html>
