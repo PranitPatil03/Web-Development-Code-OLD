@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class26</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 150px 160px ;
+            grid-template-columns: 300px 200px auto; */
+            grid-template-columns: 2fr 2fr 2fr ;
+            grid-template-columns:repeat(4,300px);
+        }
+        .item{
+            /* height:100px;
+            width:100px; */
+            border:2px solid black;
+            margin: 5px;
+            background-color:lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is item1</div>
+        <div class="item">This is item2</div>
+        <div class="item">This is item3</div>
+        <div class="item">This is item4</div>
+        <div class="item">This is item5</div>
+        <div class="item">This is item6</div>
+        <div class="item">This is item7</div>
+        <div class="item">This is item8</div>
+        <div class="item">This is item9</div>
+        <div class="item">This is item10</div>
+        <div class="item">This is item11</div>
+        <div class="item">This is item12</div>
+    </div>
+</body>
+
+</html>

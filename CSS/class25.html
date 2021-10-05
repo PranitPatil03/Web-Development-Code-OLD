@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class25</title>
+    <style>
+        *{
+            /* background-color:black; */
+            margin: 0px;
+            padding: 0px;
+        }
+        .contanier{
+            height:80vh;
+            background-color:black;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .box{
+            border-radius:25px;
+            display:flex;
+            background-color:lightgreen; 
+            width: 350px;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            transition: all 3s ease ;
+
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: scale(1.5); */
+            /* transform: skew(25deg); */
+            transform:translate(153px,134px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="box">
+            this is box..
+        </div>
+    </div>
+</body>
+</html>

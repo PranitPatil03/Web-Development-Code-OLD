@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class19</title>
+    <style>
+        .contanier{
+            display: block;
+            width: 100px;
+            margin:auto;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            background-color:lightblue;
+            border:2px solid black;
+        }
+        input[type="password"]{
+            background-color:lightgoldenrodyellow;
+            border:2px solid rgb(238, 7, 7);
+        }
+        a[target]{
+            text-align: center;
+            border: 2px solid black;
+        }
+        li:nth-child(2n+1){
+            /* background-color:blue; */
+            border: 2px solid black;
+        }
+        li:nth-child(odd){
+            background-color:blue;
+            /* border: 2px solid black; */
+        }
+    </style>  
+</head>
+<body>
+    <div class="contanier">
+        <h3><a href="http://www.google.com" target="_blank">Google</a></h3>
+        <form action="" class="control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+        </ul>
+    </div>
+</body>
+</html>

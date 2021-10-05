@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class31p</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            border: 2px solid black;
+            padding: 5px 10px;
+            background-color: lightblue;
+            margin: 5px;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: black;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span {
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:600px) {
+            body {
+                background-color: yellow;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'aside aside aside section'
+                    'footer footer footer footer'
+                    ;
+            }
+
+            span {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:600px) and (max-width:900px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'aside aside aside aside'
+                    'section section section section'
+                    'footer footer footer footer';
+            }
+
+            span {
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:900px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Contact</span>
+            <span>Location</span>
+        </nav>
+        <section class="item">
+            <h2>This is Section</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, possimus! Provident qui corporis cupiditate
+            magni inventore alias dolor soluta temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt quibusdam aut itaque laboriosam
+            adipisci suscipit, minima autem ullam velit!
+        </section>
+        <aside class="item">
+            <h2>This is Aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda illo id in animi accusantium ut magni
+                nemo eum doloribus commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo
+                possimus, incidunt reprehenderit voluptatibus porro aliquam deserunt aliquid consequuntur eligendi? </p>
+        </aside>
+    </div>
+    <footer class="item">
+        Pranit Patil @copyright 2021
+    </footer>
+</body>
+
+</html>

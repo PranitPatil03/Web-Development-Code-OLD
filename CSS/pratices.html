@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praticse</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .contanier {
+            display: grid;
+            grid-gap: 1.5rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'section section section aside'
+                'section1 section1 section1 section1';
+        }
+
+        .box {
+            border: 1px solid black;
+            background-color: lightcyan;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+            align-items: center;
+            text-align: center;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #section1 {
+            grid-area: section1;
+        }
+        span{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px 10px;
+            margin: 2px 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #btr{
+            float: right;
+            font-weight: bold;
+            border-top: 2px solid black;
+            border-radius: 20px;
+            background-color:lightblue;
+            padding: 5px 5px;
+            margin: -5px 2s5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <nav id="navbar" class="box">
+           <span>Home</span>
+           <span>About Us</span>
+           <span>Contact</span>
+           <span>Email</span>
+            <button id="btr">
+                Search on Google
+            </button>
+        </nav>
+        
+        <section id="section" class="box">
+            <h1>Welcome to CSS</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime hic quaerat tempore dolor veniam in
+                accusamus assumenda incidunt fugiat sunt dicta architecto ab sequi ad rerum tenetur, quod reiciendis id.
+                Eaque expedita error iure dolor ut pariatur culpa repellendus voluptates nisi odit voluptas tempore
+                similique illo doloremque omnis cum voluptatibus consequuntur magni minima, possimus quas, ipsum aut
+                velit?
+                Harum nostrum placeat aliquid dolores assumenda reiciendis beatae non maxime quos cupiditate molestias
+                accusamus deleniti quibusdam, eveniet dicta fugiat labore incidunt sit cumque, perspiciatis enim.
+                Delectus
+                reprehenderit esse accusantium expedita, quo voluptatibus eaque dolore soluta molestiae magnam
+                consequatur
+                id modi. Tempore, placeat?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius molestias temporibus hic nihil dolore,
+                tempora, natus esse veritatis sunt corporis nobis odio harum ipsa obcaecati. Harum consectetur quos
+                laudantium labore adipisci perferendis sed. Pariatur sint laboriosam sed facere distinctio ratione quod
+                quidem, impedit laborum eveniet, nobis fugit mollitia vitae incidunt cupiditate odit, itaque enim
+                maiores ea quas? Ipsam commodi temporibus aspernatur. Libero doloremque ipsum iste, iusto suscipit
+                corporis, in iure numquam rerum, atque delectus exercitationem dolore laboriosam voluptate illum
+                mollitia ut odit repellendus omnis aspernatur excepturi eius maiores? Delectus adipisci, ab illo quod
+                numquam, consequatur labore asperiores, esse nemo animi voluptas! Culpa enim optio eveniet possimus hic
+                ab labore sunt, ad, provident amet quas. Accusantium eligendi sit velit aliquam nemo eius, quia iure
+                blanditiis ut laboriosam debitis? Minus ipsa ducimus doloribus facilis quis reiciendis dolorum, ex dolor
+                repellendus provident aspernatur necessitatibus, asperiores placeat laudantium consequatur numquam rerum
+                omnis. Eius est sapiente officia doloribus perspiciatis sed maiores vero totam quam cumque incidunt
+                autem similique ducimus voluptas iure at aspernatur, error modi reiciendis, neque optio fugit dolore
+                excepturi. Natus, porro itaque maiores asperiores voluptate aliquid, sequi id eaque totam voluptatem
+                provident aspernatur numquam ad esse dolore in suscipit possimus non eligendi. Adipisci?</p>
+        </section>
+
+        <aside id="aside" class="box">
+            <h1>About Ourself</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam corrupti natus nobis eaque. Ab
+                aliquid, ex omnis ad rem quibusdam nihil veniam in exercitationem necessitatibus. Ea, hic sed cumque
+                quam cum, vero quisquam, nulla impedit saepe iure modi reiciendis! Labore sit, ea architecto impedit
+                quidem cumque sint illo eius ipsum unde veritatis nostrum accusantium sed ab vero. Repellat, unde rerum
+                consequuntur deleniti accusamus corporis minus sed voluptatem adipisci, incidunt nisi eaque voluptas
+                quam quod, alias ut? Nostrum ipsa unde sint sapiente veniam explicabo! Rem facilis, voluptas expedita
+                debitis impedit unde minus voluptates quaerat velit labore aspernatur possimus sequi aliquid.</p>
+        </aside>
+
+        <section id="section1" class="box">
+            <h1>
+                Content Of This web page.
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum soluta atque perferendis minima alias quis
+                itaque explicabo. Adipisci fugit similique illum! Adipisci, quaerat accusamus. Officia ullam ea quo.
+                Dolor, cumque? Velit perferendis distinctio ea quo eligendi. Similique vel dolorum voluptas inventore
+                veritatis animi, repudiandae repellat quam dolores possimus magnam, aut et! Sint veniam aperiam eligendi
+                ea similique modi culpa repellat eveniet inventore tenetur autem, omnis, iusto placeat doloribus
+                consequuntur ex itaque deleniti ipsam id vero quibusdam eaque. Quae magnam tempore itaque. Ipsam
+                excepturi vitae reiciendis ab ad nobis praesentium fugit sint saepe, veritatis sed aliquid tempore in
+                itaque beatae dolorum quas pariatur? Exercitationem eligendi architecto cumque sed, corporis eos enim.
+                Incidunt laborum labore dicta ex cum fugiat vitae dolorum recusandae, sequi officia non, fugit nulla?
+                Ullam odit fuga fugit voluptatibus alias autem illo, consequatur commodi, non necessitatibus vitae quas
+                exercitationem inventore repellat quasi voluptate? Voluptatum, minus. Quas, pariatur quod. Qui
+                repudiandae magnam nihil modi quibusdam at sed. Quidem sunt tempore soluta omnis sequi quasi placeat
+                dolorum fugit cumque amet debitis delectus quia dicta, repellendus et commodi? Debitis, eum? Illo
+                cupiditate doloribus quas quibusdam voluptatem nulla, ipsam, obcaecati amet minus veniam dolorem
+                voluptates? Neque iste ipsa laudantium, esse illum quis saepe!</p>
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class23</title>
+    <style>
+        .contanier{
+            display: flex;
+            background-color: lightblue;
+        }
+        .box{
+            margin: 5px;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            /* animation:pranit; */
+            animation:pranit1;
+            animation-duration:5s;
+            animation-iteration-count:4;
+
+            /* animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s;
+            animation-direction:reverse; */
+        }
+        #box1{
+            background-color: royalblue;
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            animation:pranit2;
+            animation-duration:5s;
+            animation-iteration-count:4;
+        }
+        @keyframes pranit {
+            from 
+            {
+            width: 200px;
+            }
+            to 
+            {
+            width: 400px;
+            }
+        }
+        @keyframes pranit1{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            25%{
+                top:200px;
+                left:0px;
+            }
+            75%{
+                top:200px;
+                left:200px;
+            }
+            100%{
+                top:0px;
+                left:200px;
+            }
+        }
+        @keyframes pranit2{
+            0%{
+                top:0px;
+                right:0px;
+            }
+            25%{
+                top:200px;
+                right:0px;
+            }
+            75%{
+                top:200px;
+                right:200px;
+            }
+            100%{
+                top:0px;
+                right:200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="box">
+            This is our class23.
+        </div>
+        <div class="box" id="box1">
+     
+        </div>
+    </div>
+</body>
+</html>

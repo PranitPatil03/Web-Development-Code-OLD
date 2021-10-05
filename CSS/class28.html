@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class28</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4,2fr);
+            grid-template-rows: repeat(4,2fr);
+            grid-gap: 1rem;
+            
+            /* grid-template-columns: 2fr 4fr 4fr;
+            grid-template-rows: 2fr 4fr 4fr; */
+            /* grid-column-gap: 1.2rem;
+            grid-row-gap: 2rem; */
+        }
+
+        .item {
+            border: 1px solid black;
+            background-color: lightcyan;
+            padding: 30px;
+        }
+        .item:first-child {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            /* grid-column: 1 / span 2;
+            grid-row: 1 / span 2; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is item1</div>
+        <div class="item">This is item2</div>
+        <div class="item">This is item3</div>
+        <div class="item">This is item4</div>
+        <div class="item">This is item5</div>
+        <div class="item">This is item6</div>
+        <div class="item">This is item7</div>
+        <div class="item">This is item8</div>
+        <div class="item">This is item9</div>
+        <div class="item">This is item10</div>
+        <div class="item">This is item11</div>
+        <div class="item">This is item12</div>
+        <div class="item">This is item13</div>
+    </div>
+</body>
+
+</html>

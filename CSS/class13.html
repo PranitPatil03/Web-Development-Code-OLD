@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class13</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width:150px;
+            height: 150px;
+          }
+        #box1{
+            position: relative;
+            top: 40px;
+            z-index: 112;
+            background-color:orangered;
+        }
+        #box2{
+            position: relative;
+            top:35px;
+            z-index: 1112;
+            background-color:rgb(107, 11, 11);
+        }
+        #box3{
+            visibility:none;
+            background-color:green;
+        }
+        #box4{
+            background-color:purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

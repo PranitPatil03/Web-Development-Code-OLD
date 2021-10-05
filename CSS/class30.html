@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class30</title>
+</head>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 20px;
+            /* grid-template-columns: repeat(4, 3fr); */
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside';
+        }
+
+        .item {
+            font-size: 20px;
+            /* border: 1px solid black; */
+            background-color: aliceblue;
+            padding: 10px;
+        }
+        #navbar{
+         grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        #aside{
+            grid-area: aside;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item" >
+            Home &nbsp; About Us &nbsp; Contact &nbsp;  Location
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, neque, blanditiis illum corrupti beatae vero odio dolore sed explicabo maiores cupiditate earum a corporis quam quibusdam ut alias? Dolor repudiandae dicta aliquid vel explicabo nostrum eaque quae quas eligendi velit eum id nam error in enim ab ad accusantium, laudantium nemo. Aperiam ea laboriosam rem facere ullam excepturi suscipit iure! Consequuntur omnis nostrum suscipit tempora labore excepturi, ut at saepe assumenda quas itaque, dicta doloribus sunt cumque incidunt. Eum praesentium obcaecati voluptates debitis harum fugit error explicabo sit, officia laborum repellendus at velit nam corrupti alias sunt asperiores quo similique esse. Doloribus nisi rerum sed dignissimos molestiae quae vel voluptatibus rem. Modi eveniet tenetur est dicta beatae atque, deleniti numquam dolorum? Minima ab aperiam eius sunt fugiat, rerum, commodi magni, debitis illo blanditiis nemo. Consequatur molestias ex, quo exercitationem atque veritatis totam? Reprehenderit dolorum quidem consequuntur omnis voluptates corrupti vero odio nemo, cupiditate vitae autem animi ea repellat quos, porro nobis cum incidunt, alias quo architecto quisquam at? Porro voluptates inventore, eligendi minus quidem perspiciatis molestias in, repellendus cum eum, architecto provident repudiandae. Eum numquam quae illo minus assumenda natus libero, nemo veritatis. Quia eaque aperiam alias at voluptas?
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, dolor minus repellendus dolore voluptatem illum ipsam molestias incidunt, nihil possimus, omnis corrupti porro itaque. Corporis nisi voluptas illum quod iste tenetur odio, fugit molestias obcaecati ipsum unde atque vitae ad, asperiores eos accusantium possimus, ab excepturi vero. Suscipit perspiciatis rem soluta accusamus explicabo itaque quia quisquam dolorem, odio maiores voluptate aliquid saepe fugit veritatis, enim, et tenetur minus facilis? Optio consequatur animi unde, nemo nulla natus delectus doloremque in cumque harum eius temporibus velit mollitia dicta, earum id pariatur vel sit minima consequuntur at. Tempora rem eaque culpa corrupti debitis?
+        </div>
+        <!-- <div class="item">This is item4</div>
+        <div class="item">This is item2</div>
+        <div class="item">This is item3</div>
+        <div class="item">This is item4</div>
+        <div class="item">This is item5</div>
+        <div class="item">This is item6</div>
+        <div class="item">This is item7</div>
+        <div class="item">This is item8</div>
+        <div class="item">This is item9</div>
+        <div class="item">This is item10</div>
+        <div class="item">This is item11</div>
+        <div class="item">This is item12</div> -->
+    
+</body>
+
+</html>

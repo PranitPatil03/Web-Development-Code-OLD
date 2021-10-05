@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class20</title>
+    <style>
+    body {
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+    }
+    header::before{
+        background: url('https://source.unsplash.com/collection/190727/1600x900');
+        content: "";
+        top:0;
+        left:0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+
+    }
+    .nav{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        padding: 5px 20px;
+    }
+    section{
+        font-size:20px;
+        height:150px;
+        margin: 5px 20px;
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: center;
+    }
+    /* section::before{
+        content: "This is me ";
+    } */
+    h3{
+        /* font-size:35px; */
+        font-size:2.5em;
+    }
+    p{
+       text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="item">home</li>
+                <li class="item">sevices</li>
+                <li class="item">about</li>
+                <li class="item">contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>welcome to Coding ..</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fugiat tempore debitis enim autem repellendus quos facilis tempora aperiam consequatur. Recusandae quam dolorem odio numquam ipsam illo eos quis dolorum, necessitatibus temporibus tempora at inventore, cumque sequi? Deserunt, dignissimos atque?z</p>
+    </section>
+</body>
+</html>
