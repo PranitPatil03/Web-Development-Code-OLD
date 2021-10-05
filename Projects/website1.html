@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGym</title>
+    <style>
+        /* CSS Reset */
+        body {
+            color: white;
+            /* width: 100vw; */
+            margin: 0px;
+            padding: 0px;
+            background: url('All photo/p4.jpg');
+        }
+
+        .left {
+            border: 2px;
+            position: absolute;
+            display: inline-block;
+            top: 30px;
+            left: 20px;
+            /* border-radius: 15px; */
+        }
+
+        .left img {
+            /* display: inline-block;
+            padding: 20px 80px;
+            margin: auto 150px */
+            width: 350px;
+            padding-left: 150px;
+            padding-top: 20px;
+
+
+
+        }
+
+        .center {
+            border: 2px;
+            display: block;
+            width: 33%;
+            margin: 60px auto;
+
+        }
+
+        .right {
+            border: 2px;
+            position: absolute;
+            display: inline-block;
+            top: 65px;
+            right: 20px;
+
+        }
+
+        .navbar {
+            list-style: none;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 75px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 35px 35px;
+            margin: 30px auto;
+        }
+
+        .navbar li a:hover {
+            color: grey;
+        }
+
+        .btn {
+            border: 2px solid rgb(92, 88, 88);
+            /* margin :50px auto; */
+            font-size: 75px;
+            padding: 3px 10px;
+            margin: auto 35px;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            
+
+        }
+
+        .btn:hover {
+            color: grey;
+        }
+
+        .contanier {
+            font-size: 75px;
+            border: 2px;
+            margin: 300px 200px;
+            padding: 111px;
+            border-radius: 20px;
+            width: 33%;
+            display: inline-block;
+            top: 30px;
+            right: 20px;
+            position: absolute;
+
+        }
+
+        .group input {
+            color: white;
+            background-color: transparent;
+            text-align: center;
+            font-size: 75px;
+            display: block;
+            width: 90%;
+            padding: 43px;
+            margin: 28px auto;
+            border-radius: 20px;
+            border: 1px solid white;
+
+
+        }
+
+        #submit {
+            background-color: transparent;
+            text-align: center;
+            font-size: 75px;
+            display: block;
+            width: 95%;
+            padding: 23px;
+            margin: 20px auto;
+            border: 1px solid white;
+        }
+
+        .heading {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- this is for Logo -->
+        <div class="left">
+            <img src="All photo/images.jpg" alt="">
+        </div>
+
+        <!-- this is for navigation -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nearest center</a></li>
+                <li><a href="#">Fitness Coach</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- this is for Extra buttons -->
+        <div class="right">
+            <buttons class="btn" id="face">Call Us</buttons>
+            <buttons class="btn" id="insta">Book NOW</buttons>
+        </div>
+    </header>
+
+    <div class="contanier">
+        <h2 class="heading">Welcome to MyGym </h2>
+        <form action="noaction.php"></form>
+        <div class="group">
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="group">
+            <input type="text" placeholder="Location">
+        </div>
+        <div class="group">
+            <input type="text" placeholder="Enter Your Age">
+        </div>
+        <div class="group">
+            <input type="text" placeholder="Your Contact Number">
+        </div>
+        <button class="btn" id="submit">Submit</button>
+    </div>
+</body>
+
+</html>

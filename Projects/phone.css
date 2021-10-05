@@ -1,0 +1,18 @@
+
+.navbar{
+    flex-direction: column;
+}
+.navbar ul li a{
+    font-size:1.2rem;
+    padding:5px 10px;
+}
+.head{
+    height: 200px;
+    padding:5px 5px;
+}
+.head::before{
+    height: 450px;
+}
+.head p{
+    font-size:2rem;
+}

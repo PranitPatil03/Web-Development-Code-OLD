@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-height:1180)" href="phone.css">
+    <title>Unique Pizzaa</title>
+    <style>
+        /* CSS Reset */
+        * {
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+        }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .logo {
+            display: flex;
+            height: 110px;
+            width: 110px;
+        }
+
+        .logo img {
+            /* border: 2px solid black; */
+            margin: 12px 12px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            font-size: 20px;
+            color: black;
+            list-style: none;
+        }
+
+        ul li a {
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            border: 2px solid black;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 21px 10px;
+            padding: 7px 15px;
+        }
+
+        ul li a:hover {
+            font-size: 20px;
+            color: black;
+            border-radius: 25px;
+            background-color: rgb(221, 221, 221);
+        }
+
+        .head {
+            /* border-top: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            padding: 5px 5px;
+            margin: -65px 10px;
+            flex-direction: column;
+        }
+
+        .head::before {
+            content: "";
+            background: url('All photo/bg1.jpg')no-repeat center center/cover;
+            position: absolute;
+            height: 430px;
+            ;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.63;
+            top: 0px;
+            left: 0px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            align-items: center;
+            font-size: 1.1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #pizza {
+            margin: 40px;
+            display: flex;
+        }
+
+        #pizza .box {
+            border: 2px solid black;
+            padding: 15px;
+            margin: -15px 15px;
+            border-radius: 28px;
+            margin-bottom: 0px;
+        }
+        #pizza .box:hover{
+            transition: background-color 3s ease .3s;
+        }
+
+        #pizza .box img {
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            /* display: block; */
+        }
+
+        .para1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box {
+
+            text-align: center;
+        }
+
+        .top {
+            text-align: center;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 23px;
+            margin-top: -13px;
+        }
+
+        .top2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #customer {
+            height: 400px;
+            margin: -45 px 5px;
+        }
+
+        #customer::before {
+            content: "";
+            position: absolute;
+            background: url('All photo/c5.jpg')no-repeat center center/cover;
+            height: 450px;
+            ;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        #client {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #client img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .client-item {
+            border: 2px solid black;
+            background-color:transparent; ;
+            border-radius: 15px;
+            padding: 10px 5px;
+            margin: 10px 5px;
+        }
+
+        .btn {
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            margin: 5px 5px;
+            padding: 5px 5px;
+            border-radius: 25px;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .dis {
+            color: black;
+        }
+
+        .heading {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .unique {
+            margin: 1px 1px;
+            padding: -10px;
+        }
+
+        .unique::before {
+            content: "";
+            position: absolute;
+            /* background:url('All photo/bg9.jpeg')no-repeat center center/cover; */
+            height: 500px;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .section {
+            position: relative;
+            height: 200px;
+            margin: 0px -45px;
+            padding: 30px;
+        }
+
+        .section::before {
+            content: "";
+            position: absolute;
+            background: lightgray;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .box-item {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 10px;
+            padding: 10px 5px;
+        }
+
+        .top3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            margin: 35px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="All Photo\logo.png" alt="">
+        </div>
+        <!-- Navigation Bar Items -->
+        <ul class="list">
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">Pizzaa</a></li>
+            <li class="item"><a href="#">Location</a></li>
+            <li class="item"><a href="#">Contact Us</a> </li>
+        </ul>
+    </nav>
+
+    <br>
+    <h1 class="top2">Unique Pizzaa Is Now in INDIA</h1>
+    <section class="head">
+        <h1 class="heading">
+            Welcome to Unique Pizzaa
+            <br> &nbsp; &nbsp;&nbsp;We Says Pizza is life
+        </h1>
+        <br>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, laudantium voluptates? Rerum
+            repellendus facilis quasi.</p>
+        <p class="para">Animi, temporibus ad distin umquam molestiae fugit quae nemo, eos alias in quas soluta at vero.
+        </p>
+        <button class="btn">Order Now</button>
+        <p class="dis">Order Now to get 20% off on your First Pizzaa</p>
+    </section>
+
+    <section class="unique">
+        <h1 class="top">Unique Pizzaa</h1>
+        <h1 class="top">You Must Try This Pizzaa Pizzaa</h1>
+        <div id="pizza">
+            <div class="box">
+                <h4 class="title">Angry Baby Pizza</h4>
+                <img src="All photo/pizza1.jpg" alt="">
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores quasi sunt, laudantium distinctio aut nam delectus voluptate dolorem, hic eum reprehenderit omnis quaerat voluptas vel in dolores atque nihil!</p>
+            </div>
+            <div class="box">
+                <h4 class="title">Carnivores Pizza</h4>
+                <img src="All photo/pizza4.jpg" alt="">
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores quasi sunt, laudantium distinctio aut nam delectus voluptate dolorem, hic eum reprehenderit omnis quaerat voluptas vel in dolores atque nihil!</p>
+            </div>
+            <div class="box">
+                <h4 class="title">Firehouse Pizza</h4>
+                <img src="All photo/pizza6.jpg" alt="">
+                <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam asperiores quasi sunt, laudantium distinctio aut nam delectus voluptate dolorem, hic eum reprehenderit omnis quaerat voluptas vel in dolores atque nihil!</p>
+            </div>
+        </div>
+    </section>
+    <section id="customer">
+        <h1 class="top2">Our Happy Pizzaa Lovers</h1>
+        <div id="client">
+            <div class="client-item">
+                <img src="All photo/c1.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="All photo/c2.jpg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="All photo/c3.jpeg" alt="">
+            </div>
+            <div class="client-item">
+                <img src="All photo/c4.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h1 class="top2">Contact Us</h1>
+        <div class="section-box">
+            <form action="">
+                <div class="box-item">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="box-item">
+                    <label for="Contact No">Contact No:</label>
+                    <input type="text" name="Contact No" id="Contact No" placeholder="Enter your Contact No">
+                </div>
+                <div class="box-item">
+                    <label for="Location">Location:</label>
+                    <input type="text" name="Location" id="Location" placeholder="Enter your Location">
+                </div>
+                <div class="box-item">
+                    <label for="Favorite Pizza">Favorite Pizza:</label>
+                    <input type="text" name="Favorite Pizza" id="Favorite Pizza"
+                        placeholder="Enter your Favorite Pizza">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="top3">
+            copyright &copy;2021 www.UniquePizza.com All rights reserved.
+    </footer>
+</body>
+
+</html>

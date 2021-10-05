@@ -1,0 +1,82 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS Variable */
+
+:root{
+    --Navgition-height:40px;
+}
+/* Navgition Bar */
+#navbar{
+   display: flex;
+   align-items: center;
+   margin: -60px -5px;
+   padding: 20px 5px;
+}
+
+/* Logo */
+.logo{
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+.logo img{
+    height:100px;
+    width: 100px;
+    margin: 10px 15px;
+}
+#navbar{
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height:25%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* List */
+#navbar ul {
+    display:flex;
+}
+ul li {
+    font-size:20px;
+    color: black;
+    list-style: none;
+    
+}
+ul li a {
+    border: 2px solid black;
+    border-radius: 20px;
+    color:black;
+    margin: -40px 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+ul li a:hover{
+    border-radius: 20px;
+    color:black;
+    background-color:lightgray;
+}
+.headline{
+    color:black;
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#home{
+    font: size 12px;
+}
+section p{
+    color:black;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
